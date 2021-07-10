@@ -49,33 +49,33 @@ strong {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 7% auto 3%;
+    grid-template-rows: 7% auto 9%;
+    grid-template-areas: "section header"
+                        "section main"
+                        "section footer";
 }
 
 header {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-area: header;
 }
 
 footer {
-    grid-column: 2/3;
-    grid-row: 3/3;
+    grid-area: footer;
 }
 
 section {
-    grid-column: 1/2;
-    grid-row: 1/3;
+    grid-area: section;
 }
 
 #cardapio {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-area: main;
 }
 
 
 /* EXERCÍCIO 3: cabeçalho da página */
-header {
 
+header {
+    padding: 10px 10px 10px 0;
 }
 
 header h1 {
@@ -83,26 +83,43 @@ header h1 {
     font-size: 36px;
     color: #e90c0c;
     font-weight: normal;
+    text-align: center;
 }
 
 header h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: #333;
     font-weight: normal;
+    text-align: end;
 }
 
 /* EXERCÍCIO 4: cada item do menu */
-article {
+main {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
 /* EXERCÍCIO 5: o rodapé */
 footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 46px 15px 25px
 }
+
 
 /* EXERCÍCIO 6: lateral */
 section {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
