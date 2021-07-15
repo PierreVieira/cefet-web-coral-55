@@ -1,0 +1,19 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --initial-gradient-color: #F6F1B2;
+    --end-gradient-color: #4599B2;
+    --border-recipient-color: #D3D3D3;
+    --border-menu-color: #AAC0AE;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: black;
+        --text-color: white;
+        --initial-gradient-color: #043F5B;
+        --end-gradient-color: #0E0329;
+        --border-recipient-color: #232E3A;
+        --border-menu-color: #574A84;
+    }
+}
